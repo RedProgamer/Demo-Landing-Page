@@ -1,0 +1,270 @@
+.logo {
+  width: 60vw;
+  max-width: 300px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container, #main-showcase, #demonstration, .container-2 {
+  width: 1000px;
+  margin: auto;
+}
+
+#main-showcase .contents .main-form .btn.get-started, #pricing .container .pricebox .price-btn {
+  background-color: #f1c40f;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#main-showcase .contents .main-form .btn.get-started:hover, #pricing .container .pricebox .price-btn:hover {
+  background-color: orange;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+#main-header {
+  background-color: #eee;
+  min-height: 75px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#main-header #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+#main-header #navbar ::after {
+  margin-top: 40px;
+}
+
+#main-header #navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#main-header #navbar ul li {
+  padding: 0 50px;
+}
+
+#main-showcase {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#main-showcase .contents .text-heading {
+  margin-bottom: 20px;
+}
+
+#main-showcase .contents .main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main-showcase .contents .main-form input[type="email"] {
+  width: 300px;
+  border: 2px solid #ff8c00;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#main-showcase .contents .main-form input[type="email"] ::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.4;
+}
+
+#main-showcase .contents .main-form input[type="email"] :-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.4;
+}
+
+#main-showcase .contents .main-form input[type="email"] ::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.4;
+}
+
+#main-showcase .contents .main-form input[type="email"] ::placeholder {
+  color: #fff;
+  opacity: 0.4;
+}
+
+#main-showcase .contents .main-form .btn.get-started {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#features {
+  margin-top: 70px;
+}
+
+#features .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#features .box .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 125px;
+  width: 20vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ff8c00;
+}
+
+#features .box .texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#features .box .texts h2 {
+  margin-bottom: 5px;
+}
+
+#demonstration {
+  margin-top: 70px;
+  width: 560px;
+}
+
+#pricing {
+  margin-top: 70px;
+}
+
+#pricing .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+#pricing .container .pricebox {
+  border: 1px solid #000;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#pricing .container .pricebox .price-heading {
+  color: black;
+  background-color: #ddd;
+  padding: 15px 0;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+#pricing .container .pricebox .price {
+  margin-top: 15px;
+}
+
+#pricing .container .pricebox ul {
+  margin: 15px 0;
+}
+
+#pricing .container .pricebox ul li {
+  padding: 5px 0;
+}
+
+#pricing .container .pricebox .price-btn {
+  outline: none;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 1em;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.container-2 {
+  margin-top: 20px;
+  width: 1100px;
+}
+
+.container-2 #main-footer {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.container-2 #main-footer #footer-bar {
+  padding: 10px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container-2 #main-footer #footer-bar li {
+  padding: 0 10px;
+}
+
+.container-2 #main-footer .footer-content {
+  text-align: right;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  font-size: 0.9em;
+  color: #444;
+}
+/*# sourceMappingURL=style.css.map */

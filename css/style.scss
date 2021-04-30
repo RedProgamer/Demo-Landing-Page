@@ -1,0 +1,206 @@
+@import 'variables';
+@import './common';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $main-background;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    @extend %containers;
+}
+
+#main-header {
+    background-color: $main-background;
+    // border-bottom: 1px solid #2222;
+    min-height: 75px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 20px;
+        margin-top: 20px;
+
+        ::after {
+            margin-top: 40px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            li {
+                padding: 0 50px;
+            }
+        }
+    }
+}
+
+#main-showcase {
+    @extend %containers;
+    text-align: center;
+    margin-top: 100px;
+
+    .contents {
+       .text-heading {
+           margin-bottom: 20px;
+       }
+       
+       .main-form {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+
+           input[type="email"] {
+                width: 300px;
+                border: 2px solid $dark-orange;
+                padding: 8px;
+                border-radius: 8px;
+
+                ::placeholder {
+                    color: #fff;
+                    opacity: 0.4;
+                }
+           }
+
+           .btn.get-started {
+               @extend %btn;
+               margin-top: 10px;
+               text-transform: uppercase;
+               font-weight: 600;
+               border-radius: 8px;
+           }
+           
+       }
+    }
+}
+
+#features {
+
+    margin-top: 70px;
+
+    .box {
+        display: flex;
+
+        .icon {
+            display: flex;
+            height: 125px;
+            width: 20vw;
+            align-items: center;
+            justify-content: center;
+            color: $dark-orange;
+        }
+
+        .texts {
+            display: flex;
+            height: 125px;
+            width: 80vw;
+            padding: 5px;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                margin-bottom: 5px;
+            }
+        }
+        
+    }
+}
+
+#demonstration {
+    margin-top: 70px;
+    @extend %containers;
+    width: 560px;
+}
+
+#pricing {
+    margin-top: 70px;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+
+        .pricebox {
+            border: 1px solid #000;
+            border-radius: 3px;
+            text-align: center;
+            
+            .price-heading {
+                color: black;
+                background-color: #ddd;
+                padding: 15px 0;
+                font-size: 18px;
+                font-family: inherit;
+                font-weight: 600;
+            }
+
+            .price {
+                margin-top: 15px;
+            }
+
+            ul {
+                margin: 15px 0;
+
+                li {
+                    padding: 5px 0;
+                }
+            }
+
+            .price-btn {
+                @extend %btn;
+                outline: none;
+                border: none;
+                margin-bottom: 15px;
+                font-size: 1em;
+                padding: 10px 25px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.container-2 {
+
+    @extend %containers;
+    margin-top: 20px;
+    width: 1100px;
+
+
+    #main-footer {
+        background-color: $footer-background;
+        border-radius: 5px;
+
+        #footer-bar {
+            padding: 10px;
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: flex-end;
+            
+            li {
+                padding: 0 10px;
+            }
+        }
+
+        .footer-content {
+            text-align: right;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            font-size: 0.9em;
+            color: #444;
+        }
+    }
+}
+
+
+
